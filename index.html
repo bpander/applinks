@@ -4,8 +4,13 @@
     <title>App preview</title>
   </head>
   <body>
-    <a href="swsapp://EnrollmentCode?code=123">
+    <button id="btn">
       EnrollmentCode
-    </a>
+    </button>
+    <script>
+      document.getElementById('btn').addEventListener('click', () => {
+        window.location = 'swsapp://EnrollmentCode?code=123';
+      });
+    </script>
   </body>
 </html>
